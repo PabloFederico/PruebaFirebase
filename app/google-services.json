@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "777347056132",
+    "firebase_url": "https://prueba1-33ff2.firebaseio.com",
+    "project_id": "prueba1-33ff2",
+    "storage_bucket": "prueba1-33ff2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777347056132:android:8b1d695e99e2a01d",
+        "android_client_info": {
+          "package_name": "com.federico.pablo.prueba1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "777347056132-9pgm3sp0se82vg118k437itj4au0pjrf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiemjs-kkIO-JJj1IqMbbJ45dklyfS5Y8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
