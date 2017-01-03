@@ -10,8 +10,112 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.federico.pablo.prueba1.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="160dp"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingresa tus datos para entrar"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:layout_marginTop="10dp"
+            android:hint="Email"
+            android:fontFamily="monospace" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:hint="Contraseña"
+            android:fontFamily="monospace" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entrar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:fontFamily="monospace"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/darker_gray"
+            android:elevation="0dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="¿Primera vez?"
+            android:textStyle="normal|bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="REGISTRATE"
+            android:layout_marginTop="5dp"
+            android:textAppearance="@android:style/TextAppearance"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_red_light"
+            android:textStyle="normal|bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_dark"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center"
+            android:layout_weight="0.30" />
+
+
+        <TextView
+            android:text="globeando"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:fontFamily="casual"
+            android:layout_gravity="center"
+            android:textSize="80px"
+            android:id="@+id/textView" />
+
+        <TextView
+            android:text="Tu app quemera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="0px"
+            android:layout_gravity="right"
+            android:textSize="40px"
+            android:id="@+id/textView2"
+            android:fontFamily="monospace" />
+    </LinearLayout>
+
+
 </RelativeLayout>
