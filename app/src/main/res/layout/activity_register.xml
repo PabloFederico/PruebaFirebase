@@ -23,7 +23,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="INGRESA"/>
+            android:text="COMPLETA TUS DATOS"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Entrar"
+            android:text="Registrarse"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:fontFamily="monospace"
             android:textSize="18sp"
@@ -56,23 +56,7 @@
             android:textAlignment="center"
             android:textColor="@android:color/background_light" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:gravity="center"
-            android:text="¿Primera vez?"
-            android:textStyle="normal|bold" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="REGISTRATE"
-            android:layout_marginTop="5dp"
-            android:textAppearance="@android:style/TextAppearance"
-            android:textSize="18sp"
-            android:textColor="@android:color/holo_red_light"
-            android:textStyle="normal|bold" />
+
 
 
     </LinearLayout>
