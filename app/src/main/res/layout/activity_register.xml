@@ -1,28 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/holo_red_light">
+
+<LinearLayout
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.federico.pablo.prueba1.MainActivity">
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_red_dark"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/globo"
+            android:layout_gravity="center"/>
+        <TextView
+            android:text="globeando"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:fontFamily="serif"
+            android:textSize="100px"
+            android:layout_gravity="center"
+            android:id="@+id/textView" />
+    </LinearLayout>
 
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginTop="160dp"
         android:layout_alignParentStart="true">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="COMPLETA TUS DATOS"/>
         <EditText
             android:layout_width="match_parent"
@@ -32,7 +62,8 @@
             android:id="@+id/editText"
             android:layout_marginTop="10dp"
             android:hint="Email"
-            android:fontFamily="monospace" />
+            android:fontFamily="monospace"
+            android:textColorHint="@android:color/white" />
 
         <EditText
             android:layout_width="match_parent"
@@ -41,7 +72,8 @@
             android:ems="10"
             android:id="@+id/editText2"
             android:hint="Contraseña"
-            android:fontFamily="monospace" />
+            android:fontFamily="monospace"
+            android:textColorHint="@android:color/white" />
 
         <Button
             android:layout_width="match_parent"
@@ -51,55 +83,12 @@
             android:fontFamily="monospace"
             android:textSize="18sp"
             android:layout_marginTop="10dp"
-            android:background="@android:color/darker_gray"
+            android:background="@android:color/holo_red_dark"
             android:elevation="0dp"
             android:textAlignment="center"
             android:textColor="@android:color/background_light" />
 
-
-
-
     </LinearLayout>
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/holo_red_dark"
-        android:weightSum="1"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
-
-        <ImageView
-            android:layout_width="189dp"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher"
-            android:layout_gravity="center"
-            android:layout_weight="0.30" />
-
-
-        <TextView
-            android:text="globeando"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/white"
-            android:fontFamily="casual"
-            android:layout_gravity="center"
-            android:textSize="80px"
-            android:id="@+id/textView" />
-
-        <TextView
-            android:text="Tu app quemera"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/white"
-            android:layout_marginRight="0px"
-            android:layout_gravity="right"
-            android:textSize="40px"
-            android:id="@+id/textView2"
-            android:fontFamily="monospace" />
-    </LinearLayout>
-
-
-</RelativeLayout>
+</LinearLayout>
+</ScrollView>
